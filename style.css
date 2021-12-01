@@ -1,0 +1,70 @@
+#container {
+    width: 1000px;
+    height: 650px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    margin-left: 170px;
+}
+#header {
+    height: 100px;
+    background-color: rgb(201, 229, 253);
+    display: flex;
+}
+#core {
+    flex: 1;
+}
+#footer {
+    height: 30px;
+    background-color: rgb(201, 229, 253);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+}
+#title{
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold   ;
+    flex: 1;
+    margin-top: 10px;
+    padding: 20px;
+}
+#logo{
+    margin-top: 0px;
+    padding: 0px;
+    text-align: center;
+    flex: 1;
+}
+#login{
+    margin-top: 10px;
+    padding: 20px;
+    text-align: end;
+    flex: 1;
+}
+
+#logo img:hover{
+    transform: rotate(360deg);
+    transition: transform 0.3s ease-out;
+}
+#title:hover{
+    color: cadetblue;
+}
+#login button{
+    font-size: 18px;
+    font-weight: bold; 
+    padding: 10px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 12px;
+}
+#login button:hover{
+    background-color: cadetblue;
+    color: rgb(201, 229, 253);
+}
+#login button:active{
+    background-color: cadetblue;
+    color: red;
+}
+
+
