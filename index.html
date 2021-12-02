@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
 </head>
+
 <body>
     <div id="container">
         <div id="header">
@@ -16,16 +18,82 @@
             </div>
             <div id="title">LIBRARY</div>
             <div id="login">
-                <button>Log in</button>
+                <button onclick="document.getElementById('id01').style.display='block'"
+                    style="width:auto;">Login</button>
             </div>
         </div>
         <div id="core">
-    
+            <button id="addBook" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Add
+                a Book</button>
+
         </div>
         <div id="footer">
             Copyright © 2021 Lamine's learning path
         </div>
     </div>
-    
+
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img src="./images/img_avatar2.png" alt="Avatar" class="avatar" width="100px" height="120px">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+    <div id="id02" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img src="./images/library-logo.png" alt="Avatar" class="avat" width="80px" height="80px">
+            </div>
+
+            <div class="container">
+                <h1 style="text-align: center; color: green;">Add a New Book</h1>
+                <label for="bookTitle"><b>Book Title*</b></label>
+                <input type="text" placeholder="Enter the book title" name="bookTitle" required>
+                <label for="bookAuthor"><b>Book Author*</b></label>
+                <input type="text" placeholder="Enter the book author" name="bookAuthor" required>
+                <label for="bookPages"><b>Number of pages*</b></label>
+                <input type="text" placeholder="Enter the book number of pages" name="bookPages" required>
+                <label for="status"><b>Book Reading Status*</b></label>
+                <select name="status" id="status">
+                    <option value="read">yes,i already read it</option>
+                    <option value="not read">no,i didnt read it yet</option>
+                </select>
+
+                <label for="published"><b>Published*</b></label>
+                <input type="date" placeholder="Published date" name="published" required>
+                <button id="newBook" type="submit" >Add</button>
+
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1 ; text-align: center;">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
