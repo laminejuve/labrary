@@ -16,6 +16,22 @@
     text-align: center;
     flex-direction: column;
 }
+
+thead th {
+  background-color:cadetblue ;
+  color: aliceblue;
+  border-radius: 12px; 
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+td, th {
+ background-color: rgb(114, 189, 189);
+ color: aliceblue;
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: bolder;
+}
 #footer {
     height: 30px;
     background-color: rgb(201, 229, 253);
@@ -172,3 +188,24 @@ input[type=text], input[type=password] {
     animation: animatezoom 0.6s
   }
   
+#newBook{
+  background-color: blue;
+}
+#addBook{
+  margin: 25px;
+}
+#dltBtn{
+  color: red;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 0px;
+}
+#dltBtn:hover{
+  background-color: orange;
+  color: yellow;
+}
+#dltBtn:active{
+  background-color: red;
+  color: white;
+}
