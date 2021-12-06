@@ -194,18 +194,29 @@ input[type=text], input[type=password] {
 #addBook{
   margin: 25px;
 }
-#dltBtn{
+.dltBtn{
   color: red;
   background-color: transparent;
   font-size: 18px;
   font-weight: bolder;
   padding: 0px;
 }
-#dltBtn:hover{
+.dltBtn:hover{
   background-color: orange;
   color: yellow;
 }
-#dltBtn:active{
+.dltBtn:active{
   background-color: red;
   color: white;
+}
+.statusBtn{
+  background-color: transparent;
+  font-size: 18px;
+  padding: 0px;
+}
+.statusBtn:hover{
+  color: #000;
+}
+.statusBtn:active{
+  color: rgb(153, 29, 29);
 }
